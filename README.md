@@ -121,3 +121,10 @@ The disadvantage is that if one mistake is made while refactoring it will take m
 
 ## Advantages and disadvantages of the original and refactored VBA script 
 Both have a clear goal to arrive, but the refactored it was more easier to read and more order.
+
+#VBA_Challenge_2017.png 
+![2017 worksheet](https://user-images.githubusercontent.com/82455263/117586752-bbce7f00-b0df-11eb-9994-70fc6fd6ff3d.png)
+
+
+#VBA_Challenge_2018.png
+![2018 worksheet](https://user-images.githubusercontent.com/82455263/117586762-c1c46000-b0df-11eb-8e4e-da78f029a0f5.png)
