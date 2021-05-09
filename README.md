@@ -1,7 +1,7 @@
 # DQ SOLAR ENERGY
 ## Steve’s graduate from finance degree and Steve’s parents are going to be their first client, they are passionate in green energy and they want to invest in DQ solar energy, Steve needs to analyze the green energy stocks, he created an excel file to access all the data. He wants to used VBA to analyze. Steve wants to find the total daily volume and yearly return for each stock. The parents of Steve want to know how actively DQ was traded in 2018, because they believe that if a stock is traded often, the price will reflect the value of the stock.
 ### An small analisis had been made to understand how the values where sort by and the specifications of the worksheets used in this analysis.
-####![1](https://user-images.githubusercontent.com/82455263/117584624-a4899480-b0d3-11eb-9199-e805522834b4.png)
+![1](https://user-images.githubusercontent.com/82455263/117584624-a4899480-b0d3-11eb-9199-e805522834b4.png)
 
 I start the code mentioning that the data is going to show in the worksheet “All Stock Analysis Refactored” but is going to be refactored. 
              1.	     Sub AllStocksAnalysisRefactored()
@@ -19,7 +19,7 @@ I started mentioning the values to print in the columns 1,2,3 of the row 3 from 
                     Cells(3, 2).Value = "Total Daily Volume"
                     Cells(3, 3).Value = "Return"
 
-#### ![2](https://user-images.githubusercontent.com/82455263/117584644-c2ef9000-b0d3-11eb-84a5-9e3d8b2a4442.png)
+ ![2](https://user-images.githubusercontent.com/82455263/117584644-c2ef9000-b0d3-11eb-84a5-9e3d8b2a4442.png)
 
 I started mentioning the values to print the tickers, in total 12, starting from the value (0) until the value (11) in the “All stocks analysis” worksheet.  
             7.	     Dim tickers(12) As String
@@ -39,7 +39,7 @@ I started mentioning the values to print the tickers, in total 12, starting from
 I did activate the year value “worksheet” to be able to pick the year from the 2017 and 2018 worksheet.
            8.	      Worksheets(yearvalue).Activate
 
-#### ![3](https://user-images.githubusercontent.com/82455263/117584648-c5ea8080-b0d3-11eb-92e3-7501c2f4e52e.png)
+![3](https://user-images.githubusercontent.com/82455263/117584648-c5ea8080-b0d3-11eb-92e3-7501c2f4e52e.png)
 
 I did activate the option to get the number of rows to loop over
            9.    	RowCount = Cells(Rows.Count, "A").End(xlUp).Row
@@ -62,7 +62,7 @@ I did created a loop over all the rows in the spreadsheet.
         13.	    'Worksheets(yearvalue).Activate
                  For i = 2 To RowCount
 
-#### ![4](https://user-images.githubusercontent.com/82455263/117584653-cdaa2500-b0d3-11eb-96e6-3055b782396a.png)
+![4](https://user-images.githubusercontent.com/82455263/117584653-cdaa2500-b0d3-11eb-96e6-3055b782396a.png)
 
 I did create a code to increase volume for current ticker and also a conditional for ticker volumes, ticker starting prices and ticker ending prices.
 
@@ -76,7 +76,7 @@ I did create a code to increase volume for current ticker and also a conditional
 
          16.	tickerindex = tickerindex + 1
 
-#### ![5](https://user-images.githubusercontent.com/82455263/117584662-da2e7d80-b0d3-11eb-9bb7-7e79781ac0f7.png)
+![5](https://user-images.githubusercontent.com/82455263/117584662-da2e7d80-b0d3-11eb-9bb7-7e79781ac0f7.png)
 
 I did create a loop through your arrays to output the Ticker, Total Daily Volume, and Return.
          17.	For i = 0 To 11
@@ -96,7 +96,7 @@ I did Formatted all the information inside the worksheet “ All Stocks Analysis
              Columns("B").AutoFit
 
 
-#### ![6](https://user-images.githubusercontent.com/82455263/117584667-dd296e00-b0d3-11eb-90d1-b6a5c511ecf2.png)
+![6](https://user-images.githubusercontent.com/82455263/117584667-dd296e00-b0d3-11eb-90d1-b6a5c511ecf2.png)
 I limited the format from the data row starting at 4 and the data row ending at 15, using conditional to use the colors green and red .
 
          19.	dataRowStart = 4
@@ -115,9 +115,9 @@ I limited the format from the data row starting at 4 and the data row ending at 
               
 And finally i make sure i " end sub" to finish the code 
 
-### Advantages and disadvantages of refactoring code in general 
+## Advantages and disadvantages of refactoring code in general 
 The advantage is when the code es refactored, is easier to understand and that gives more options to the code to add other functions. 
 The disadvantage is that if one mistake is made while refactoring it will take more time solving the problem.
 
-### Advantages and disadvantages of the original and refactored VBA script 
+## Advantages and disadvantages of the original and refactored VBA script 
 Both have a clear goal to arrive, but the refactored it was more easier to read and more order.
